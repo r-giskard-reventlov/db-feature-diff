@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.rgiskard.org/features" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sta="http://www.rgiskard.org/features">
+	
+	<complexType name="Feature">
+    	<sequence>
+    		<element name="name" type="string" minOccurs="1" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="features">
+	    <complexType>
+	    	<sequence>
+	    		<element name="feature" type="sta:Feature" minOccurs="0" maxOccurs="unbounded"></element>
+	    	</sequence>
+	    </complexType>
+    </element>
+
+</schema>

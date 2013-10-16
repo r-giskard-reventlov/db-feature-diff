@@ -109,3 +109,9 @@ The following is an example using the maven exec plugin:
   </plugin>
 
   [Note that the dependency must also be added to the <dependencies> section of the pom]
+
+Execute using the exec.args parameter e.g.:
+  mvn ecec:java -Dexec.args="-i -p my.properties"
+
+  for more info:
+    http://mojo.codehaus.org/exec-maven-plugin/java-mojo.html#commandlineArgs  
